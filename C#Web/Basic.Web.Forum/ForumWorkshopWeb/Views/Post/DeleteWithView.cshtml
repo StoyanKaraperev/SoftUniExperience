@@ -1,0 +1,25 @@
+﻿@model PostAddForumModel
+@{
+    ViewBag.Title = "Delete Post";
+}
+<h2 class="text-center">@ViewBag.Title</h2>
+<hr />
+<div class="row">
+    <form method="post" asp-asp-controller="Post" asp-action="DeleteWithView">
+        <div class="form-group">
+            <div class="mb-3">
+                <label asp-for="Title"></label>
+                <input asp-for="Title" class="form-control" placeholder="Write your title here..." disabled="disabled">
+            </div>
+            <div class="mb-3">
+                <label asp-for="Content"></label>
+                <input asp-for="Content" class="form-control" placeholder="Write your post here..." disabled="disabled">
+            </div>
+        </div>
+        <input class="btn btn-danger mt-3" type="submit" value="Delete" />
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
