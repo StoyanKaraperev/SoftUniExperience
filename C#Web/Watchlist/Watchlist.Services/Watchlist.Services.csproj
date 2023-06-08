@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Watchlist.Data.Models\Watchlist.Data.Models.csproj" />
+    <ProjectReference Include="..\Watchlist.Data\Watchlist.Data.csproj" />
+    <ProjectReference Include="..\Watchlist.View.Models\Watchlist.View.Models.csproj" />
+  </ItemGroup>
+
+</Project>
